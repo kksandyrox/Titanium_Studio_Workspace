@@ -30,7 +30,8 @@ var view1 = Ti.UI.createView({
 	backgroundColor:'blue'
 });
 
-var email = function(){
+
+emailButton.addEventListener('click',function(){
 	var emailDialog = Ti.UI.createEmailDialog();
 	emailDialog.subject = ' ';
 	emailDialog.toRecipients = ' ';
@@ -38,11 +39,7 @@ var email = function(){
 	var file = Titanium.UI.getFile(Ti.Filesystem.resourcesDirectory, "textfile2.txt");
 	emailDialog.addAttachment(file);
 	emailDialog.open();
-	
-};
-
-emailButton.addEventListener('click',function(){
-	email();
+	view1.open();
 });
 
 // var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile2.txt"); // 

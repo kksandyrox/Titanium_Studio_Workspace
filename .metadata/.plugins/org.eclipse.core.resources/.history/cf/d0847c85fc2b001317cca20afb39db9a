@@ -1,0 +1,43 @@
+// var data = {
+	// 'John':10,
+	// 'Matthew':20
+// };
+
+var window = Titanium.UI.createWindow({
+	backgroundColor:'yellow'
+});
+
+var emailLabel = Titanium.UI.createLabel({
+	backgroundColor:'white',
+	color:'orange',
+	font:{fontSize:22},
+	text:'Send an email',
+	borderRadius:20,
+	top:50,
+	left:50
+});
+
+var emailButton = Titanium.UI.createButton({
+	color:'blue',
+	value:'Click me to send an email',
+	width:50,
+	height:40,
+	top:150,
+	left:50
+});
+
+var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile2.txt");
+// 
+// if(!file.exists){
+	// file.createFile();
+// }
+// 
+// file.write(JSON.stringify(data));
+
+var content = file.read();
+Ti.API.info(content);
+
+
+window.open();
+window.add(emailLabel);
+window.add(emailButton);

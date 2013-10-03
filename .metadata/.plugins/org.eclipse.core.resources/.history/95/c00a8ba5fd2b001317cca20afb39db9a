@@ -26,23 +26,20 @@ var emailButton = Titanium.UI.createButton({
 	left:50
 });
 
-var view1 = Ti.UI.createView({
+var view1 = createView({
 	backgroundColor:'blue'
 });
 
-var email = function(){
+
+emailButton.addEventListener('click',function(){
 	var emailDialog = Ti.UI.createEmailDialog();
 	emailDialog.subject = ' ';
 	emailDialog.toRecipients = ' ';
 	emailDialog.messageBody = ' ';
 	var file = Titanium.UI.getFile(Ti.Filesystem.resourcesDirectory, "textfile2.txt");
-	emailDialog.addAttachment(file);
+	emailDialog.addattachment(f);
 	emailDialog.open();
-	
-};
-
-emailButton.addEventListener('click',function(){
-	email();
+	view1.open();
 });
 
 // var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile2.txt"); // 

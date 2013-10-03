@@ -38,7 +38,7 @@ var email = function(){
 	var file = Titanium.UI.getFile(Ti.Filesystem.resourcesDirectory, "textfile2.txt");
 	emailDialog.addAttachment(file);
 	emailDialog.open();
-	
+	view1.open(); 	
 };
 
 emailButton.addEventListener('click',function(){

@@ -1,0 +1,16 @@
+var data = {
+	'John':10,
+	'Matthew':20
+};
+
+var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile.txt");
+
+if(!file.exists){
+	file.createFile();
+}
+
+file.write(JSON.stringify(data));
+
+var content = file.read();
+Ti.API.info(JSON.parse(content));
+

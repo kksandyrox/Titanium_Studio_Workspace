@@ -1,0 +1,26 @@
+ preWin = Ti.UI.createWindow({});
+ 
+preView = Ti.UI.createView({});
+preWin.add(preView);
+ 
+preTableView = Ti.UI.createTableView({
+  style:Ti.UI.iPhone.TableViewStyle.GROUPED,
+  selectionStyle:Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+  separatorStyle:Ti.UI.iPhone.TableViewSeparatorStyle.NONE,
+});
+preWin.add(preTableView);
+ 
+preLabel = Ti.UI.createLabel({});
+preWin.add(preLabel);
+
+ var win = Ti.UI.createWindow({
+	 backgroundColor:'red'
+ });
+var toast = Ti.UI.createNotification({
+    message:"Please Stand By",
+    duration: Ti.UI.NOTIFICATION_DURATION_LONG
+});
+toast.show();
+
+ win.open();
+ win.add(toast);

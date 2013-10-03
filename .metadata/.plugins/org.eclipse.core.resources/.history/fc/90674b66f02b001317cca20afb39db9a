@@ -1,0 +1,10 @@
+var win = Ti.UI.createWindow({
+	backgroundColor:'red'
+});
+file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile.txt");
+var blob = file.read();
+// dispose of file handle & blob.
+file = null;
+blob = null;
+win.open();
+win.add(blob);

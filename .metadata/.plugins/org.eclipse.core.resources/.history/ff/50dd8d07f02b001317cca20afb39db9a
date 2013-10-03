@@ -1,0 +1,6 @@
+file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "LICENSE.txt");
+var blob = file.read();
+var readText = LICENSE.text;
+// dispose of file handle & blob.
+file = null;
+blob = null;

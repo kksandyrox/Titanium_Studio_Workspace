@@ -1,0 +1,7 @@
+file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, "textfile.txt");
+if(!file.exists){
+	file.createFile();
+}
+var contents = file.read();
+Ti.API.info('Output '+contents.text);
+

@@ -1,0 +1,58 @@
+Titanium.Facebook.appid = "119134734910040";
+Titanium.Facebook.permissions = ['publish_stream', 'read_stream', "user_checkins", "publish_checkins"];
+ 
+function doFacebookCheckin(_callback) {
+ 
+    var getInfo = function(localCallback) {
+ 
+        // GOTCHA - You need to stringify the coordinates or the 
+        // the API call will fail, this was a PITA to find
+        var data = {
+            "place" : "117464364938130",
+            "coordinates" : JSON.stringify({
+                'latitude' : 40.7798027,
+                'longitude' : -73.9481371,
+            }),
+            "access_token" : Ti.Facebook.accessToken
+        };
+        Ti.Facebook.requestWithGraphPath('me/checkins', data, 'POST', function(e2) {
+ 
+            if(e2.success) {
+ 
+                Ti.API.info("Success");
+                Ti.API.info(JSON.stringify(e2.result));
+ 
+                if(e2.result) {
+                    var data = JSON.parse(e2.result);
+                    return;
+                }
+ 
+            } else if(e2.cancelled) {
+                Ti.API.error("User Cancelled");
+                return;
+            } else {
+                Ti.API.error(JSON.stringify(e2));
+                return;
+            }
+ 
+        });
+    };
+    // do that thing...
+    if(!Titanium.Facebook.loggedIn) {
+        Titanium.Facebook.authorize();
+ 
+        Titanium.Facebook.addEventListener('login', function(e) {
+            if(e.success) {
+                setTimeout(function() {
+                    getInfo();
+                }, 2000);
+            } else if(e.error || e.cancelled) {
+                return;
+            }
+        });
+    } else {
+        getInfo();
+    }
+}
+ 
+doFacebookCheckin();

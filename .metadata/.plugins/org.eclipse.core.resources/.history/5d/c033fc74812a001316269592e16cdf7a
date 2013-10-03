@@ -1,0 +1,14 @@
+var fb = require('facebook');
+fb.appid = 119134734910040;
+fb.permissions = ['profile_pic']; // Permissions your app needs
+fb.forceDialogAuth = true;
+fb.addEventListener('login', function(e) {
+    if (e.success) {
+        alert('Logged In');
+    } else if (e.error) {
+        alert(e.error);
+    } else if (e.cancelled) {
+        alert("Canceled");
+    }
+});
+fb.authorize();

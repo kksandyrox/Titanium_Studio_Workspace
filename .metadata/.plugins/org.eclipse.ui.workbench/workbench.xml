@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="940" width="1200" x="195" y="65">
+<window height="940" width="1377" x="547" y="160">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="0" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="0" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="0" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="0" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="0" y="22"/>
+<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="150" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="144" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.xml.alloy" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.appcelerator.titanium.editor.jss" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.text" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page focus="true" label="Workspace - Studio">
+<page aggregateWorkingSetId="Aggregate for window 1380859609374" focus="true" label="Workspace - Studio (extended)">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -29,30 +33,77 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/testOne/Resources/app.js" title="app.js" tooltip="testOne/Resources/app.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testOne/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="42" selectionTopPixel="150"/>
+<editor id="com.aptana.editor.js" name="facebook_publish_stream.js" partName="facebook_publish_stream.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js" title="facebook_publish_stream.js" tooltip="KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="664" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.js" name="tab_groups.js" partName="tab_groups.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/KitchenSink/Resources/ui/common/baseui/tab_groups.js" title="tab_groups.js" tooltip="KitchenSink/Resources/ui/common/baseui/tab_groups.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KitchenSink/Resources/ui/common/baseui/tab_groups.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="665" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
+<view id="com.aptana.snippets.ui.views.SnippetsView" partName="Snippets">
+<viewState/>
+</view>
+<view id="com.aptana.terminal.views.terminal" partName="Terminal"/>
+<view id="com.aptana.samples.ui.SamplesView" partName="Samples">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (100 of 956 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="testOne">
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="forFriday">
+<project name="KitchenSink">
+<selection>
+<element path="/forFriday"/>
+</selection>
+</project>
+<project name="forFriday">
+<selection>
+<element path="/forFriday"/>
+</selection>
+</project>
+<project name="imageViewExample">
+<expanded/>
+<selection/>
+</project>
 <project name="testOne">
 <expanded>
 <element path="/testOne/Resources"/>
+<element path="/testOne/Resources/iphone"/>
 </expanded>
 <selection>
-<element path="/testOne/Resources/app.js"/>
+<element path="/testOne/Resources/textfile2.txt"/>
 </selection>
 </project>
 </viewState>
@@ -61,7 +112,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.appcelerator.titanium.ui.browser.dashboard" activePerspective="com.appcelerator.titanium.ui.StudioPerspective">
+<perspectives activePart="com.appcelerator.titanium.ui.ide.tiappEditor" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.appcelerator.titanium.ui.perspectives.TitaniumStudioPerspectiveFactory" id="com.appcelerator.titanium.ui.StudioPerspective" label="Studio"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -99,10 +150,101 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="leftArea">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="com.aptana.explorer.view" label="App Explorer"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="leftArea">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="leftArea"/>
+<info folder="true" part="terminalArea" ratio="0.75" ratioLeft="663" ratioRight="221" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.aptana.terminal.views.terminal:*" label="LabelNotFound"/>
+<page content="com.aptana.terminal.views.terminal" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="com.aptana.webserver.ui.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.75" ratioLeft="663" ratioRight="221" relationship="4" relative="leftArea">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.aptana.samples.ui.SamplesView" label="LabelNotFound"/>
+<page content="com.aptana.snippets.ui.views.SnippetsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Studio (extended)"/>
+<alwaysOnActionSet id="com.aptana.browser.actionSet"/>
+<alwaysOnActionSet id="org.chromium.debug.ui.actionSets"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.aptana.editor.common.presentation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.aptana.js.debug.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<alwaysOnActionSet id="com.aptana.ui.globalActionSet"/>
+<alwaysOnActionSet id="com.aptana.terminal.actionSet"/>
+<show_view_action id="com.aptana.browser.views.webbrowser"/>
+<show_view_action id="com.aptana.explorer.view"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="com.aptana.ui.io.remoteview"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="com.aptana.samples.ui.SamplesView"/>
+<show_view_action id="com.aptana.snippets.ui.views.SnippetsView"/>
+<show_view_action id="com.aptana.terminal.views.terminal"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.aptana.webserver.ui.view"/>
+<new_wizard_action id="com.aptana.ui.wizards.NewNodeJSProject"/>
+<new_wizard_action id="com.appcelerator.titanium.mobile.project_wizard"/>
+<new_wizard_action id="com.appcelerator.titanium.mobile.module.wizard"/>
+<new_wizard_action id="com.aptana.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="com.appcelerator.titanium.ui.StudioPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.aptana.explorer.view"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.aptana.terminal.views.terminal"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1d83140" orientation="256" selectedTabId="com.aptana.snippets.ui.views.SnippetsView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+<view id="com.aptana.samples.ui.SamplesView" ratio="0.3"/>
+<view id="com.aptana.snippets.ui.views.SnippetsView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
-<info folder="true" part="leftArea">
-<folder activePageID="com.aptana.explorer.view" appearance="2" expanded="2">
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
 <page content="com.aptana.explorer.view" label="App Explorer"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
@@ -112,36 +254,36 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="leftArea">
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="left">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="leftArea"/>
-<info folder="true" part="terminalArea" ratio="0.75" ratioLeft="663" ratioRight="221" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
+<info folder="true" part="terminalArea" ratio="0.7699531" ratioLeft="656" ratioRight="196" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="com.aptana.terminal.views.terminal:*" label="LabelNotFound"/>
-<page content="com.aptana.terminal.views.terminal" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="com.aptana.terminal.views.terminal" label="Terminal"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<page content="com.aptana.webserver.ui.view" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.75" ratioLeft="663" ratioRight="221" relationship="4" relative="leftArea">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d83140" ratio="0.75" ratioLeft="663" ratioRight="221" relationship="4" relative="left">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="com.aptana.samples.ui.SamplesView" label="LabelNotFound"/>
 <page content="com.aptana.snippets.ui.views.SnippetsView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -149,12 +291,182 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/mashups/facebook_login_logout.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/MashupsWindow.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/mashups/facebook_test.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/imageViewExample/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/baseui/image_view_animated.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" path="/imageViewExample/tiapp.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/testOne/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" uri="file:/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen%20Sink/tiapp.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/baseui/tab_groups.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/handheld/ios/ApplicationWindow.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/MessageWindow.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/forFriday/Resources/app.js"/>
+</editors>
+<item historyLabel="app.js | Kitchen Sink" index="0">
+<position info="not_deleted" x="4408" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="1405" y="0"/>
+</item>
+<item historyLabel="app.js | Kitchen Sink" index="0">
+<position/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position/>
+</item>
+<item historyLabel="app.js | Kitchen Sink" index="0">
+<position/>
+</item>
+<item historyLabel="MashupsWindow.js" index="2">
+<position info="not_deleted" x="647" y="29"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="547" y="0"/>
+</item>
+<item historyLabel="app.js | Kitchen Sink" index="0">
+<position info="not_deleted" x="0" y="4408"/>
+</item>
+<item historyLabel="MashupsWindow.js" index="2">
+<position info="not_deleted" x="647" y="29"/>
+</item>
+<item historyLabel="facebook_test.js" index="3">
+<position info="not_deleted" x="1136" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position/>
+</item>
+<item historyLabel="image_view_animated.js" index="5">
+<position info="not_deleted" x="729" y="0"/>
+</item>
+<item historyLabel="facebook_login_logout.js" index="1">
+<position info="not_deleted" x="1349" y="0"/>
+</item>
+<item historyLabel="app.js | Kitchen Sink" index="0">
+<position info="not_deleted" x="2410" y="0"/>
+</item>
+<item historyLabel="facebook_login_logout.js" index="1">
+<position info="not_deleted" x="0" y="1403"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="1432" y="0"/>
+</item>
+<item historyLabel="app.js | testOne" index="7">
+<position info="not_deleted" x="973" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="456" y="0"/>
+</item>
+<item historyLabel="tiapp.xml" index="6"/>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="739" y="0"/>
+</item>
+<item historyLabel="tiapp.xml | Kitchen Sink" index="8"/>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="739" y="0"/>
+</item>
+<item historyLabel="facebook_publish_stream.js" index="9">
+<position info="not_deleted" x="1284" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="739" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="facebook_publish_stream.js" index="9">
+<position info="not_deleted" x="1284" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="tab_groups.js" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="500" y="0"/>
+</item>
+<item historyLabel="tab_groups.js" index="10">
+<position info="not_deleted" x="665" y="0"/>
+</item>
+<item historyLabel="facebook_publish_stream.js" index="9">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="app.js | KitchenSink" index="11">
+<position info="not_deleted" x="4281" y="2"/>
+</item>
+<item historyLabel="ApplicationWindow.js" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js | KitchenSink" index="11">
+<position info="not_deleted" x="4281" y="2"/>
+</item>
+<item historyLabel="ApplicationWindow.js" index="12">
+<position info="not_deleted" x="108" y="0"/>
+</item>
+<item historyLabel="app.js | KitchenSink" index="11">
+<position info="not_deleted" x="1416" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="1082" y="14"/>
+</item>
+<item historyLabel="facebook_publish_stream.js" index="9">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="1374" y="2"/>
+</item>
+<item historyLabel="app.js | KitchenSink" index="11">
+<position info="not_deleted" x="4008" y="0"/>
+</item>
+<item historyLabel="MessageWindow.js" index="13">
+<position info="not_deleted" x="1321" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="275" y="6"/>
+</item>
+<item historyLabel="facebook_publish_stream.js" index="9">
+<position info="not_deleted" x="841" y="0"/>
+</item>
+<item historyLabel="tab_groups.js" index="10">
+<position info="not_deleted" x="665" y="0"/>
+</item>
+<item historyLabel="app.js | imageViewExample" index="4">
+<position info="not_deleted" x="275" y="6"/>
+</item>
+<item historyLabel="ApplicationWindow.js" index="12">
+<position info="not_deleted" x="108" y="0"/>
+</item>
+<item historyLabel="app.js | KitchenSink" index="11">
+<position info="not_deleted" x="4008" y="0"/>
+</item>
+<item historyLabel="tab_groups.js" index="10">
+<position info="not_deleted" x="665" y="0"/>
+</item>
+<item historyLabel="facebook_publish_stream.js" index="9">
+<position info="not_deleted" x="664" y="0"/>
+</item>
+<item active="true" historyLabel="app.js | forFriday" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d83140"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
 <trimArea IMemento.internal.id="1024">
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
@@ -164,8 +476,38 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="testOne/Resources/app.js">
-<persistable path="/testOne/Resources/app.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="forFriday/tiapp.xml">
+<persistable path="/forFriday/tiapp.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="forFriday/Resources/app.js">
+<persistable path="/forFriday/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="MessageWindow.js" tooltip="KitchenSink/Resources/ui/common/MessageWindow.js">
+<persistable path="/KitchenSink/Resources/ui/common/MessageWindow.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="ApplicationWindow.js" tooltip="KitchenSink/Resources/ui/handheld/ios/ApplicationWindow.js">
+<persistable path="/KitchenSink/Resources/ui/handheld/ios/ApplicationWindow.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="KitchenSink/Resources/app.js">
+<persistable path="/KitchenSink/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="tab_groups.js" tooltip="KitchenSink/Resources/ui/common/baseui/tab_groups.js">
+<persistable path="/KitchenSink/Resources/ui/common/baseui/tab_groups.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="facebook_publish_stream.js" tooltip="KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js">
+<persistable path="/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/tiapp.xml">
+<persistable uri="file:/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen%20Sink/tiapp.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="KS_nav_ui.png" tooltip="imageViewExample/Resources/KS_nav_ui.png">
+<persistable path="/imageViewExample/Resources/KS_nav_ui.png"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="imageViewExample/tiapp.xml">
+<persistable path="/imageViewExample/tiapp.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="imageViewExample/Resources/app.js">
+<persistable path="/imageViewExample/Resources/app.js"/>
 </file>
 </mruList>
 </workbench>

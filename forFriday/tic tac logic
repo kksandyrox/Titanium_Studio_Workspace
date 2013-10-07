@@ -270,7 +270,7 @@ function drawCheck()
   }
 }
 
-function winCheck()
+function winCheck() // computer trying to win
 {
   check2()
   if(sqr1 == " O " && sqr2 == " O " && sqr3T == 0 && turn == 1)
@@ -429,7 +429,7 @@ function winCheck()
   }
   check2()
 }
-function computer()
+function computer() //computer trying to block
 {
   check2()
   if(sqr1 == " X " && sqr2 == " X " && sqr3T == 0 && turn == 1)

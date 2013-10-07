@@ -1,0 +1,122 @@
+var window = Ti.UI.createWindow({
+	backgroundColor:'white'
+});
+
+var view1 = Ti.UI.createView({
+	backgroundColor:'yellow'
+});
+
+var label1 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',  
+    top: 30,
+    left:90,
+    width: 40, 
+    height: 40
+});
+
+var label2 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',
+    top: 30,
+    width: 40, 
+    height: 40
+});
+
+var label3 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',
+    top: 30,
+    left: 190,
+    width: 40, 
+    height: 40
+});
+
+var label4 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',
+    top: 80,
+    width: 40, 
+    height: 40
+});
+
+var label5 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',
+    top: 80,
+    left:90,
+    width: 40, 
+    height: 40
+});
+
+var label6 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',
+    top: 80,
+    left: 190,
+    width: 40, 
+    height: 40
+});
+
+var label7 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',  
+    top: 130,
+    left:90,
+    width: 40, 
+    height: 40
+});
+
+var label8 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: ' ',
+    top: 130,
+    width: 40, 
+    height: 40
+});
+
+var label9 = Ti.UI.createLabel({
+	backgroundColor: 'red',
+	color:'black',
+    text: '0',
+    top: 130,
+    left: 190,
+    width: 40, 
+    height: 40
+});
+
+var moveCount=0;
+var turn = 0;
+
+label1.addEventListener('click',function(e){
+	if(turn==0){
+		label1.text='X';
+	}
+	else{
+		label1.text='O';
+	}
+});
+
+
+
+window.open();
+window.add(view1);
+view1.add(label1);
+view1.add(label2);
+view1.add(label3);
+view1.add(label4);
+view1.add(label5);
+view1.add(label6);
+view1.add(label7);
+view1.add(label8);
+view1.add(label9);
+
+

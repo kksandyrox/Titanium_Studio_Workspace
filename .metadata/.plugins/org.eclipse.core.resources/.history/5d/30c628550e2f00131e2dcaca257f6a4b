@@ -1,0 +1,20 @@
+var window = Ti.UI.createWindow({
+	backgroundColor:'white'
+});
+
+var view1 = Ti.UI.createView({
+	backgroundColor:'yellow'
+});
+
+var label1 = Ti.UI.createLabel({
+	color: '#900',
+    text: 'A simple label',
+  
+  top: 30,
+  width: Ti.UI.SIZE, height: Ti.UI.SIZE
+});
+
+window.open();
+window.add(view1);
+view1.add(label1);
+

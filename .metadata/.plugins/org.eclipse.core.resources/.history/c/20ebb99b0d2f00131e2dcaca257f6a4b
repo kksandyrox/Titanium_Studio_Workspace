@@ -1,0 +1,18 @@
+var window = Ti.UI.createWindow({
+	backgroundColor:'white'
+});
+
+var view1 = Ti.UI.createView({
+	backgroundColor:'white'
+});
+
+var lable1 = Ti.UI.createLabel({
+	color:'red',
+	top:50,
+	left:50,
+	height:40,
+	width:40
+});
+view1.add(label1);
+window.open();
+window.add(view1);

@@ -189,6 +189,9 @@ function drawCheck(){
 	if((label1.text !==' ') && (label2.text !==' ') && (label3.text !==' ') && (label4.text !==' ') && (label5.text !==' ') && (label6.text !==' ') && (label7.text !==' ') && (label8.text !==' ') && (label9.text !==' ')){
 		alert("Draw");
 	}
+	else{
+		check()
+	}
 }
 
 function winCheck(){

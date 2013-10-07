@@ -148,8 +148,8 @@ function check(){
 	}
 	else{		 
     	winCheck();
-    	//check2();
-    	//drawCheck() ; 
+    	check2();
+    	drawCheck() ; 
 	}
 }
 

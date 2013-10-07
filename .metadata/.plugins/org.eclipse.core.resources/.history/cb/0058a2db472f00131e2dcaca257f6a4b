@@ -128,9 +128,6 @@ function check(){
 	else if(label7.text =='X' && label8.text == 'X' && label9.text == 'X'){
 		alert('You Win');
 	}
-	else if(label1.text =='X' && label5.text == 'X' && label9.text == 'X'){
-		alert('You Win');
-	}
 	else if(label1.text =='X' && label4.text == 'X' && label7.text == 'X'){
 		alert('You Win');
 	}
@@ -148,13 +145,14 @@ function check(){
 	}
 	else{		 
     	winCheck();
-    	//check2();
+    	check2();
     	//drawCheck() ; 
 	}
 }
 
 function check2(){
 	//vari();
+	drawCheck();
 	if(label1.text =='O' && label2.text == 'O' && label3.text == 'O'){
 		alert('You Lose');
 	}
@@ -179,9 +177,6 @@ function check2(){
 	else if(label3.text =='O' && label5.text == 'O' && label7.text == 'O'){
 		alert('You Lose');
 	}
-	else{
-		drawCheck();
-	}
 }
 
 function drawCheck(){
@@ -189,10 +184,13 @@ function drawCheck(){
 	if((label1.text !==' ') && (label2.text !==' ') && (label3.text !==' ') && (label4.text !==' ') && (label5.text !==' ') && (label6.text !==' ') && (label7.text !==' ') && (label8.text !==' ') && (label9.text !==' ')){
 		alert("Draw");
 	}
+	else{
+		check();
+	}
 }
 
 function winCheck(){
-	//check2();
+	check2();
 	if(label1.text == 'O' && label2.text == 'O' && label3.text == ' ' && turn == 1){
     label3.text = 'O';
     //sqr3T = 1;
@@ -349,7 +347,7 @@ function winCheck(){
 }
 
 function computer(){
-	//check2();
+	check2();
 	if(label1.text == 'X' && label2.text == 'X' && label3.text == ' ' && turn == 1){
     label3.text = 'O';
     //sqr3T = 1;

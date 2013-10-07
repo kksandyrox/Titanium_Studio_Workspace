@@ -128,9 +128,6 @@ function check(){
 	else if(label7.text =='X' && label8.text == 'X' && label9.text == 'X'){
 		alert('You Win');
 	}
-	else if(label1.text =='X' && label5.text == 'X' && label9.text == 'X'){
-		alert('You Win');
-	}
 	else if(label1.text =='X' && label4.text == 'X' && label7.text == 'X'){
 		alert('You Win');
 	}
@@ -148,13 +145,14 @@ function check(){
 	}
 	else{		 
     	winCheck();
-    	//check2();
-    	//drawCheck() ; 
+    	check2();
+    	drawCheck() ; 
 	}
 }
 
 function check2(){
 	//vari();
+	drawCheck();
 	if(label1.text =='O' && label2.text == 'O' && label3.text == 'O'){
 		alert('You Lose');
 	}
@@ -179,9 +177,6 @@ function check2(){
 	else if(label3.text =='O' && label5.text == 'O' && label7.text == 'O'){
 		alert('You Lose');
 	}
-	else{
-		drawCheck();
-	}
 }
 
 function drawCheck(){
@@ -192,148 +187,148 @@ function drawCheck(){
 }
 
 function winCheck(){
-	//check2();
+	check2();
 	if(label1.text == 'O' && label2.text == 'O' && label3.text == ' ' && turn == 1){
     label3.text = 'O';
-    //sqr3T = 1;
+    sqr3T = 1;
     turn = 0;
   }
   else if(label2.text == 'O' && label3.text == 'O' && label1.text == ' ' && turn == 1)
   {
     label1.text = 'O';
-    //sqr1T = 1;
+    sqr1T = 1;
     turn = 0;
   }
   else if(label4.text == 'O' && label5.text == 'O' && label6.text == ' ' && turn == 1)
   {
     label6.text = 'O';
-    //sqr6T = 1;
+    sqr6T = 1;
     turn = 0;
   }
   else if(label5.text == 'O' && label6.text == 'O' && label4.text == ' ' && turn == 1)
   {
     label4.text = 'O';
-    //sqr4T = 1;
+    sqr4T = 1;
     turn = 0;
   }
   else if(label7.text == 'O' && label8.text == 'O' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label8.text == 'O' && label9.text == 'O' && label7.text == ' ' && turn == 1)
   {
     label7.text = 'O';
-   // sqr7T = 1;
+    sqr7T = 1;
     turn = 0;
   }
   else if(label1.text == 'O' && label5.text == 'O' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label5.text == 'O' && label9.text == 'O' && label1.text == ' ' && turn == 1)
   {
    label1.text = 'O';
-    //sqr1T = 1;
+    sqr1T = 1;
     turn = 0;
   }
   else if(label3.text == 'O' && label5.text == 'O' && label7.text == ' ' && turn == 1)
   {
     label7.text = 'O';
-    //sqr7T = 1;
+    sqr7T = 1;
     turn = 0;
   }
   else if(label7.text == 'O' && label5.text == 'O' && label3.text == ' ' && turn == 1)
   {
     label3.text = 'O';
-    //sqr3T = 1;
+    sqr3T = 1;
     turn = 0;
   }
   else if(label1.text == 'O' && label3.text == 'O' && label2.text == ' ' && turn == 1)
   {
     label2.text = 'O';
-    //sqr2T = 1;
+    sqr2T = 1;
     turn = 0;
   }
   else if(label4.text == 'O' && label6.text == 'O' && label5.text == ' ' && turn == 1)
   {
     label5.text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else if(label7.text== 'O' && label9.text == 'O' && label8.text == ' ' && turn == 1)
   {
     label8.text = 'O';
-    //sqr8T = 1;
+    sqr8T = 1;
     turn = 0;
   }
   else if(label1.text == 'O' && label7.text == 'O' && label4.text == ' ' && turn == 1)
   {
     label4.text = 'O';
-    //sqr4T = 1;
+    sqr4T = 1;
     turn = 0;
   }
   else if(label2.text == 'O' && label8.text == 'O' && label5.text == ' ' && turn == 1)
   {
     label5,text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else if(label3.text == 'O' && label9.text == 'O' && label6.text == ' ' && turn == 1)
   {
     label6.text = 'O';
-    //sqr6T = 1;
+    sqr6T = 1;
     turn = 0;
   }
   else if(label1.text == 'O' && label5.text == 'O' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label4.text == 'O' && label7.text == 'O' && label1.text == ' ' && turn == 1)
   {
     label1.text = 'O';
-    //sqr1T = 1;
+    sqr1T = 1;
     turn = 0;
   }
   else if(label5.text == 'O' && label8.text == 'O' && label2.text == ' ' && turn == 1)
   {
     label2.text = 'O';
-    //sqr2T = 1;
+    sqr2T = 1;
     turn = 0;
   }
   else if(label6.text == 'O' && label9.text == 'O' && label3.text == ' ' && turn == 1)
   {
     label3.text = 'O';
-    //sqr3T = 1;
+    sqr3T = 1;
     turn = 0;
   }
   else if(label1.text =='O' && label4.text == 'O' && label7.text == ' ' && turn == 1)
   {
     label7.text = 'O';
-    //sqr7T = 1;
+    sqr7T = 1;
     turn = 0;
   }
   else if(label2.text == 'O' && label5.text == 'O' && label8.text == ' ' && turn == 1)
   {
     label8.text = " O ";
-    //sqr8T = 1;
+    sqr8T = 1;
     turn = 0;
   }
   else if(label3.text == 'O' && label6.text == 'O' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label1.text == 'O' && label9.text == 'O' && label5.text == ' ' && turn == 1)
   {
     label5.text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else if(label3.text == 'O' && label7.text == 'O' && label5.text == ' ' && turn == 1)
@@ -349,154 +344,154 @@ function winCheck(){
 }
 
 function computer(){
-	//check2();
+	check2();
 	if(label1.text == 'X' && label2.text == 'X' && label3.text == ' ' && turn == 1){
     label3.text = 'O';
-    //sqr3T = 1;
+    sqr3T = 1;
     turn = 0;
   }
   else if(label2.text == 'X' && label3.text == 'X' && label1.text == ' ' && turn == 1)
   {
     label1.text = 'O';
-    //sqr1T = 1;
+    sqr1T = 1;
     turn = 0;
   }
   else if(label4.text == 'X' && label5.text == 'X' && label6.text == ' ' && turn == 1)
   {
     label6.text = 'O';
-    //sqr6T = 1;
+    sqr6T = 1;
     turn = 0;
   }
   else if(label5.text == 'X' && label6.text == 'X' && label4.text == ' ' && turn == 1)
   {
     label4.text = 'O';
-    //sqr4T = 1;
+    sqr4T = 1;
     turn = 0;
   }
   else if(label7.text == 'X' && label8.text == 'X' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label8.text == 'X'&& label9.text == 'X' && label7.text == ' ' && turn == 1)
   {
     label7.text = 'O';
-    //sqr7T = 1;
+    sqr7T = 1;
     turn = 0;
   }
   else if(label1.text == 'X' && label5.text == 'X' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label5.text == 'X' && label9.text == 'X' && label1.text == ' ' && turn == 1)
   {
    label1.text = 'O';
-    //sqr1T = 1;
+    sqr1T = 1;
     turn = 0;
   }
   else if(label3.text == 'X' && label5.text == 'X' && label7.text == ' ' && turn == 1)
   {
     label7.text = 'O';
-   // sqr7T = 1;
+    sqr7T = 1;
     turn = 0;
   }
   else if(label7.text == 'X' && label5.text == 'X' && label3.text == ' ' && turn == 1)
   {
     label3.text = 'O';
-    //sqr3T = 1;
+    sqr3T = 1;
     turn = 0;
   }
   else if(label1.text == 'X' && label3.text == 'X' && label2.text == ' ' && turn == 1)
   {
     label2.text = 'O';
-    //sqr2T = 1;
+    sqr2T = 1;
     turn = 0;
   }
   else if(label4.text == 'X' && label6.text == 'X' && label5.text == ' ' && turn == 1)
   {
     label5.text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else if(label7.text== 'X' && label9.text == 'X' && label8.text == ' ' && turn == 1)
   {
     label8.text = 'O';
-    //sqr8T = 1;
+    sqr8T = 1;
     turn = 0;
   }
   else if(label1.text == 'X' && label7.text == 'X' && label4.text == ' ' && turn == 1)
   {
     label4.text = 'O';
-    //sqr4T = 1;
+    sqr4T = 1;
     turn = 0;
   }
   else if(label2.text == 'X' && label8.text == 'X' && label5.text == ' ' && turn == 1)
   {
     label5,text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else if(label3.text == 'X' && label9.text == 'X' && label6.text == ' ' && turn == 1)
   {
     label6.text = 'O';
-    //sqr6T = 1;
+    sqr6T = 1;
     turn = 0;
   }
   else if(label1.text == 'X' && label5.text == 'X' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label4.text == 'X' && label7.text == 'X' && label1.text == ' ' && turn == 1)
   {
     label1.text = 'O';
-    //sqr1T = 1;
+    sqr1T = 1;
     turn = 0;
   }
   else if(label5.text == 'X' && label8.text == 'X' && label2.text == ' ' && turn == 1)
   {
     label2.text = 'O';
-    //sqr2T = 1;
+    sqr2T = 1;
     turn = 0;
   }
   else if(label6.text == 'X' && label9.text == 'X' && label3.text == ' ' && turn == 1)
   {
     label3.text = 'O';
-    //sqr3T = 1;
+    sqr3T = 1;
     turn = 0;
   }
   else if(label1.text == 'X' && label4.text == 'X' && label7.text == ' ' && turn == 1)
   {
     label7.text = 'O';
-    //sqr7T = 1;
+    sqr7T = 1;
     turn = 0;
   }
   else if(label2.text == 'X' && label5.text == 'X' && label8.text == ' ' && turn == 1)
   {
     label8.text = 'O';
-    //sqr8T = 1;
+    sqr8T = 1;
     turn = 0;
   }
   else if(label3.text == 'X' && label6.text == 'X' && label9.text == ' ' && turn == 1)
   {
     label9.text = 'O';
-    //sqr9T = 1;
+    sqr9T = 1;
     turn = 0;
   }
   else if(label1.text == 'X' && label9.text == 'X' && label5.text == ' ' && turn == 1)
   {
     label5.text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else if(label3.text == 'X' && label7.text == 'X' && label5.text == ' ' && turn == 1)
   {
     label5.text = 'O';
-    //sqr5T = 1;
+    sqr5T = 1;
     turn = 0;
   }
   else{

@@ -148,8 +148,8 @@ function check(){
 	}
 	else{		 
     	winCheck();
-    	//check2();
-    	//drawCheck() ; 
+    	check2();
+    	drawCheck() ; 
 	}
 }
 
@@ -502,7 +502,7 @@ function computer(){
   else{
   	AI();
   }
-  check2();
+  check();
 }
 
 function AI(){

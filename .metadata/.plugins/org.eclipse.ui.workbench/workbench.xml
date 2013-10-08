@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="940" width="1377" x="543" y="73">
+<window height="940" width="1377" x="485" y="121">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -20,7 +20,7 @@
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.xml.alloy" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.appcelerator.titanium.editor.jss" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.text" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -32,24 +32,20 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="2"/>
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/Resources/app.js" title="app.js" tooltip="forFriday/Resources/app.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forFriday/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="446" selectionTopPixel="0"/>
-</editor>
-<editor id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" partName="TiApp Editor" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/tiapp.xml" title="TiApp Editor" tooltip="forFriday/tiapp.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forFriday/tiapp.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="tic tac logic" partName="tic tac logic" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/tic tac logic" title="tic tac logic" tooltip="forFriday/tic tac logic" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.ui.DefaultTextEditor" name="tic tac logic" partName="tic tac logic" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/tic tac logic" title="tic tac logic" tooltip="forFriday/tic tac logic" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forFriday/tic tac logic"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18853" selectionTopPixel="9783"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="742" selectionTopPixel="579"/>
+</editor>
+<editor activePart="true" focus="true" id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/Resources/app.js" title="app.js" tooltip="forFriday/Resources/app.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forFriday/Resources/app.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4651" selectionTopPixel="3055"/>
 </editor>
 </editors>
 <views>
@@ -70,6 +66,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (1 item)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -83,19 +82,18 @@
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="forFriday">
-<project name="KitchenSink">&#x0A;<selection>&#x0A;<element path="/forFriday"/>
+<project name="forFriday">
+<selection>
+<element path="/forFriday"/>
 </selection>
 </project>
-<project name="forFriday">&#x0A;<selection>&#x0A;<element path="/forFriday"/>
-</selection>
-</project>
-<project name="imageViewExample">&#x0A;<expanded/>
-<selection/>
-</project>
-<project name="testOne">&#x0A;<expanded>&#x0A;<element path="/testOne/Resources"/>
+<project name="testOne">
+<expanded>
+<element path="/testOne/Resources"/>
 <element path="/testOne/Resources/iphone"/>
 </expanded>
-<selection>&#x0A;<element path="/testOne/Resources/textfile2.txt"/>
+<selection>
+<element path="/testOne/Resources/textfile2.txt"/>
 </selection>
 </project>
 </viewState>
@@ -104,7 +102,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.editor.js" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.appcelerator.titanium.ui.perspectives.TitaniumStudioPerspectiveFactory" id="com.appcelerator.titanium.ui.StudioPerspective" label="Studio"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -255,7 +253,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.7699531" ratioLeft="656" ratioRight="196" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.aptana.terminal.views.terminal" label="Terminal"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -285,164 +283,155 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/mashups/facebook_login_logout.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/MashupsWindow.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/mashups/facebook_test.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/imageViewExample/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Kitchen Sink/Resources/ui/common/baseui/image_view_animated.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" path="/imageViewExample/tiapp.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/testOne/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" uri="file:/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen%20Sink/tiapp.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/baseui/tab_groups.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/handheld/ios/ApplicationWindow.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/MessageWindow.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/forFriday/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/KitchenSink/Resources/ui/common/baseui/tab_groups.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/forFriday/tic tac logic"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/forFriday/Resources/app.js"/>
 </editors>
-<item historyLabel="app.js | Kitchen Sink" index="0">
-<position info="not_deleted" x="0" y="4408"/>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
 </item>
-<item historyLabel="MashupsWindow.js" index="2">
-<position info="not_deleted" x="647" y="29"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
 </item>
-<item historyLabel="facebook_test.js" index="3">
-<position info="not_deleted" x="1136" y="0"/>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12335" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="11659" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="11173" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="4204" y="0"/>
+</item>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="14011" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="4204" y="0"/>
+</item>
+<item historyLabel="app.js" index="1">
 <position/>
 </item>
-<item historyLabel="image_view_animated.js" index="5">
-<position info="not_deleted" x="729" y="0"/>
+<item historyLabel="app.js" index="1">
+<position/>
 </item>
-<item historyLabel="facebook_login_logout.js" index="1">
-<position info="not_deleted" x="1349" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3203" y="0"/>
 </item>
-<item historyLabel="app.js | Kitchen Sink" index="0">
-<position info="not_deleted" x="2410" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="1727" y="0"/>
 </item>
-<item historyLabel="facebook_login_logout.js" index="1">
-<position info="not_deleted" x="0" y="1403"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3012" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="1432" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3846" y="0"/>
 </item>
-<item historyLabel="app.js | testOne" index="7">
-<position info="not_deleted" x="973" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="11684" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="456" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="1474" y="560"/>
 </item>
-<item historyLabel="tiapp.xml" index="6"/>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="739" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="12353" y="214"/>
 </item>
-<item historyLabel="tiapp.xml | Kitchen Sink" index="8"/>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="739" y="0"/>
+<item historyLabel="app.js" index="1">
+<position/>
 </item>
-<item historyLabel="facebook_publish_stream.js" index="9">
-<position info="not_deleted" x="1284" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3014" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="739" y="0"/>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="742" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="500" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3014" y="0"/>
 </item>
-<item historyLabel="facebook_publish_stream.js" index="9">
-<position info="not_deleted" x="1284" y="0"/>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="742" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="500" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3014" y="0"/>
 </item>
-<item historyLabel="tab_groups.js" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="742" y="0"/>
 </item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="500" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3014" y="0"/>
 </item>
-<item historyLabel="tab_groups.js" index="10">
-<position info="not_deleted" x="665" y="0"/>
+<item historyLabel="tic tac logic" index="0">
+<position info="not_deleted" x="742" y="0"/>
 </item>
-<item historyLabel="facebook_publish_stream.js" index="9">
-<position info="not_deleted" x="841" y="0"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3014" y="0"/>
 </item>
-<item historyLabel="app.js | KitchenSink" index="11">
-<position info="not_deleted" x="4281" y="2"/>
+<item historyLabel="app.js" index="1">
+<position info="not_deleted" x="3995" y="0"/>
 </item>
-<item historyLabel="ApplicationWindow.js" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="app.js | KitchenSink" index="11">
-<position info="not_deleted" x="4281" y="2"/>
-</item>
-<item historyLabel="ApplicationWindow.js" index="12">
-<position info="not_deleted" x="108" y="0"/>
-</item>
-<item historyLabel="app.js | KitchenSink" index="11">
-<position info="not_deleted" x="1416" y="0"/>
-</item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="1082" y="14"/>
-</item>
-<item historyLabel="facebook_publish_stream.js" index="9">
-<position info="not_deleted" x="841" y="0"/>
-</item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="1374" y="2"/>
-</item>
-<item historyLabel="app.js | KitchenSink" index="11">
-<position info="not_deleted" x="4008" y="0"/>
-</item>
-<item historyLabel="MessageWindow.js" index="13">
-<position info="not_deleted" x="1321" y="0"/>
-</item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="275" y="6"/>
-</item>
-<item historyLabel="facebook_publish_stream.js" index="9">
-<position info="not_deleted" x="841" y="0"/>
-</item>
-<item historyLabel="tab_groups.js" index="10">
-<position info="not_deleted" x="665" y="0"/>
-</item>
-<item historyLabel="app.js | imageViewExample" index="4">
-<position info="not_deleted" x="275" y="6"/>
-</item>
-<item historyLabel="ApplicationWindow.js" index="12">
-<position info="not_deleted" x="108" y="0"/>
-</item>
-<item historyLabel="app.js | KitchenSink" index="11">
-<position info="not_deleted" x="4008" y="0"/>
-</item>
-<item historyLabel="tab_groups.js" index="10">
-<position info="not_deleted" x="665" y="0"/>
-</item>
-<item historyLabel="facebook_publish_stream.js" index="9">
-<position info="not_deleted" x="664" y="0"/>
-</item>
-<item historyLabel="app.js | forFriday" index="14">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="facebook_publish_stream.js" index="15">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="tab_groups.js" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="tab_groups.js" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="app.js" index="14">
-<position info="not_deleted" x="446" y="0"/>
-</item>
-<item active="true" historyLabel="tic tac logic" index="17">
-<position info="not_deleted" x="18853" y="0"/>
+<item active="true" historyLabel="app.js" index="1">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -452,6 +441,7 @@
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d83140"/>
+<trimItem IMemento.internal.id="left"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -461,18 +451,19 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.appcelerator.ui.trim"/>
+<trimItem IMemento.internal.id="terminalArea"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="forFriday/Resources/app.js">
+<persistable path="/forFriday/Resources/app.js"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tic tac logic" tooltip="forFriday/tic tac logic">
 <persistable path="/forFriday/tic tac logic"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="forFriday/tiapp.xml">
 <persistable path="/forFriday/tiapp.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="forFriday/Resources/app.js">
-<persistable path="/forFriday/Resources/app.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="MessageWindow.js" tooltip="KitchenSink/Resources/ui/common/MessageWindow.js">
 <persistable path="/KitchenSink/Resources/ui/common/MessageWindow.js"/>

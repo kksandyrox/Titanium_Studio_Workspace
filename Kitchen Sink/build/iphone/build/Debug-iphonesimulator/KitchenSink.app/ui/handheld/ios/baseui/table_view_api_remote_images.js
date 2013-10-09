@@ -1,0 +1,1 @@
+/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/Resources/ui/handheld/ios/baseui/table_view_api_remote_images.js

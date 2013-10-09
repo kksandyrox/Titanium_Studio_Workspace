@@ -1,0 +1,1 @@
+/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/Resources/ui/common/phone/record_video.js

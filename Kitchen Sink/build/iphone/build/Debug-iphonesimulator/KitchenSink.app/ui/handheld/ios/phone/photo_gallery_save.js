@@ -1,0 +1,1 @@
+/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/Resources/ui/handheld/ios/phone/photo_gallery_save.js

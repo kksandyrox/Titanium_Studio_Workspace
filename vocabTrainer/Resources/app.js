@@ -35,7 +35,9 @@ var fileName = 'wordsAndMeanings.json';
 var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, fileName); 
 var preParseData = file.read().text;
 var response = JSON.parse(preParseData);
+
 Ti.API.info(response.words.length);
+
 for(var i = 0; i < response.words.length ; i++){
 	word = response.words[i];
 	row = Ti.UI.createTableViewRow({
@@ -64,6 +66,47 @@ add.addEventListener('click',function(e){
 	window2 = Titanium.UI.createWindow({
 		backgroundColor:'8FD2ED'
 	});
+
+	submit.addEventListener('click', function(e){
+		//response.words.push({"name" : "yes!!", "meaning" : "it Worked"});
+		var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'wordsAndMeanings.json');
+		response.words.push({"name" : "yes!!", "meaning" : "it worked"});
+		var json = JSON.stringify(response);
+	file.write(json, true);
+	Ti.API.info(file.read().text);
+	
+		
+		
+		//var json = JSON.stringify(response);
+		//file.write(json);
+		//Ti.API.info(file);
+		//Ti.API.info(json);
+		
+		//response.words.push({"name" : "abc", "meaning" : "alphabets"});
+		//Ti.API.info(typeof(textName.value));
+		//var one = JSON.parse(textName.value);
+		//Ti.API.info(one);
+		//var obj = eval("(" + textName.value + ")");
+		//Ti.API.info(obj);
+		//var log = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'wordsAndMeanings.json');
+		// response.word.push({
+			// "name" : "Zebasdasra",
+			// "meaning" : "An animal"
+		// });
+		// Ti.API.info(response.word);
+		//alerts.push({"name" : textName.value, "meaning" : textMeaning.value});
+		//Ti.API.info(alerts);
+		//var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, fileName); 
+		// var preParseData = file.read();
+		// var response = JSON.parse(preParseData);
+		// Ti.API.info(response.words.length);
+		// Ti.API.info(response);
+		// response.word.push()
+		// var file2 = Titanium.FileSystem.getFile(Titanium.FileSystem.resourcesDirectory,'wordsAndMeanings.json');
+		// Ti.API.info(file2);
+	});
+	
+	
 	window2.open();
 	window2.add(view2);
 	view2.add(textName);
@@ -75,74 +118,48 @@ window.add(view1);
 view1.add(tableView);
 view1.add(add);
 
-
-
-//file.write(JSON.stringify(data));
- 
-// var content = file.read();
-// Ti.API.info(content);
-
-// Ti.UI.backgroundColor = '#dddddd';
-//  
-// var url = "https://raw.github.com/appcelerator/Documentation-Examples/master/HTTPClient/data/json.txt";
+// 
 // var win = Ti.UI.createWindow();
-// var table = Ti.UI.createTableView();
-// var tableData = [];
-// var json, fighters, fighter, i, row, nameLabel, nickLabel;
 //  
-// var xhr = Ti.Network.createHTTPClient({
-    // onload: function() {
-	 // Ti.API.info(this.responseText);
-// 		
-	// json = JSON.parse(this.responseText);
-	// Ti.API.info(json);
-	// for (i = 0; i < json.fighters.length; i++) {
-	    // fighter = json.fighters[i];
-	    // row = Ti.UI.createTableViewRow({
-	        // height:'60dp'
-	    // });
-	    // nameLabel = Ti.UI.createLabel({
-	        // text:fighter.name,
-	        // font:{
-	            // fontSize:'24dp',
-		    // fontWeight:'bold'
-		// },
-		// height:'auto',
-		// left:'10dp',
-		// top:'5dp',
-		// color:'#000',
-		// touchEnabled:false
-	    // });
-	    // nickLabel = Ti.UI.createLabel({
-		// text:'"' + fighter.nickname + '"',
-		// font:{
-		    // fontSize:'16dp'
-		// },
-		// height:'auto',
-		// left:'15dp',
-		// bottom:'5dp',
-		// color:'#000',
-		// touchEnabled:false
-	    // });
+// // here the reponse will be written
+// var texArea = Ti.UI.createTextArea({value:'',top:20,right:20,left:20,bottom:20,backgroundColor:'white', font:{fontSize:20}});
 //  
-	    // row.add(nameLabel);
-	    // row.add(nickLabel);
-	    // tableData.push(row);
-        // }
-// 		
-	// table.setData(tableData);
-    // },
-    // onerror: function(e) {
-	// Ti.API.debug("STATUS: " + this.status);
-	// Ti.API.debug("TEXT:   " + this.responseText);
-	// Ti.API.debug("ERROR:  " + e.error);
-	// alert('There was an error retrieving the remote data. Try again.');
-    // },
-    // timeout:5000
-// });
+// win.add(texArea);
 //  
-// xhr.open("GET", url);
-// xhr.send();
-//  
-// win.add(table);
 // win.open();
+//  
+//  
+// var xhr = Ti.Network.createHTTPClient();
+// xhr.onload = function(){
+	// try{
+		// var json = JSON.parse(this.responseText);
+		// // show the json in the textArea
+		// texArea.value = json;
+// 		
+		// // write it to the file system
+		// var file1 = Titanium.Filesystem.getFile(
+			// Titanium.Filesystem.applicationDataDirectory, 'json.json'
+		// );
+		// file1.write(json);
+// 		
+		// // show it as MD5 (after 2 seconds, just for fun)
+		// setTimeout(function(){
+			// var file2 = Titanium.Filesystem.getFile(
+				// Titanium.Filesystem.applicationDataDirectory, 'json.json'
+			// );
+			// texArea.value = Ti.Utils.md5HexDigest(file2.toBlob());
+		// },2000);
+//  
+	// }catch(e){
+		// Ti.API.info(e);
+	// }
+// };
+// xhr.onerror = function(e){
+	// alert(e);
+// };
+//  
+// // get my test json
+// xhr.open('GET', 'https://s3.amazonaws.com/pedruqui/tests/hotels.json');
+// xhr.send();
+
+

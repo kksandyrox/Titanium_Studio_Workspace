@@ -1,0 +1,1 @@
+/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/Resources/ui/handheld/android/controls/picker_android_spinner_text2.js

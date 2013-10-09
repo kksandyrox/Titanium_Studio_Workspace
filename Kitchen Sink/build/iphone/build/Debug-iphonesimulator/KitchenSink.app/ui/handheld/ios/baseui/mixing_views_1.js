@@ -1,0 +1,1 @@
+/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/Resources/ui/handheld/ios/baseui/mixing_views_1.js

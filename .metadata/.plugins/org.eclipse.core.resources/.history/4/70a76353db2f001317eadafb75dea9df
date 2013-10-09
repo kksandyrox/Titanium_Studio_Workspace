@@ -1,3 +1,0 @@
-var window = Ti.UI.createWindow({
-	backgroundcolor:'21DCEE'
-})

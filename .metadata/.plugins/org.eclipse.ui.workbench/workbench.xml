@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="940" width="1377" x="485" y="121">
+<window height="940" width="1377" x="763" y="64">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,11 +17,12 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.json" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.xml.alloy" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.appcelerator.titanium.editor.jss" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.text" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.appcelerator.titanium.ui.ide.tiappEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.text" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -32,20 +33,29 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="2"/>
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="tic tac logic" partName="tic tac logic" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/tic tac logic" title="tic tac logic" tooltip="forFriday/tic tac logic" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forFriday/tic tac logic"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="742" selectionTopPixel="579"/>
+<editor activePart="true" focus="true" id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/vocabTrainer/Resources/app.js" title="app.js" tooltip="vocabTrainer/Resources/app.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vocabTrainer/Resources/app.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2087" selectionTopPixel="1049"/>
 </editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/forFriday/Resources/app.js" title="app.js" tooltip="forFriday/Resources/app.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/forFriday/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4651" selectionTopPixel="3055"/>
+<editor id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" partName="TiApp Editor" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/vocabTrainer/tiapp.xml" title="TiApp Editor" tooltip="vocabTrainer/tiapp.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vocabTrainer/tiapp.xml"/>
+</editor>
+<editor id="com.aptana.editor.json" name="wordsAndMeanings.json" partName="wordsAndMeanings.json" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/vocabTrainer/Resources/wordsAndMeanings.json" title="wordsAndMeanings.json" tooltip="vocabTrainer/Resources/wordsAndMeanings.json" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vocabTrainer/Resources/wordsAndMeanings.json"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="65" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="example" partName="example" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/vocabTrainer/Resources/example" title="example" tooltip="vocabTrainer/Resources/example" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vocabTrainer/Resources/example"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="437" selectionTopPixel="45"/>
 </editor>
 </editors>
 <views>
@@ -66,9 +76,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -81,19 +88,17 @@
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="forFriday">
-<project name="forFriday">
-<selection>
-<element path="/forFriday"/>
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="Todo List">
+<project name="Todo List">&#x0A;<selection>&#x0A;<element path="/Todo List"/>
 </selection>
 </project>
-<project name="testOne">
-<expanded>
-<element path="/testOne/Resources"/>
+<project name="forFriday">&#x0A;<selection>&#x0A;<element path="/Todo List"/>
+</selection>
+</project>
+<project name="testOne">&#x0A;<expanded>&#x0A;<element path="/testOne/Resources"/>
 <element path="/testOne/Resources/iphone"/>
 </expanded>
-<selection>
-<element path="/testOne/Resources/textfile2.txt"/>
+<selection>&#x0A;<element path="/testOne/Resources/textfile2.txt"/>
 </selection>
 </project>
 </viewState>
@@ -222,15 +227,10 @@
 <view id="com.aptana.terminal.views.terminal"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1d83140" orientation="256" selectedTabId="com.aptana.snippets.ui.views.SnippetsView" style="0">
-<fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-<view id="com.aptana.samples.ui.SamplesView" ratio="0.3"/>
-<view id="com.aptana.snippets.ui.views.SnippetsView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.aptana.samples.ui.SamplesView"/>
+<view id="com.aptana.snippets.ui.views.SnippetsView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -249,6 +249,7 @@
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
@@ -269,11 +270,15 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1d83140" ratio="0.75" ratioLeft="663" ratioRight="221" relationship="4" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<page content="com.aptana.samples.ui.SamplesView" label="LabelNotFound"/>
-<page content="com.aptana.snippets.ui.views.SnippetsView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.aptana.samples.ui.SamplesView" label="Samples"/>
+<page content="com.aptana.snippets.ui.views.SnippetsView" label="Snippets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -283,155 +288,157 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/forFriday/tic tac logic"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/forFriday/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/vocabTrainer/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.json" path="/vocabTrainer/Resources/wordsAndMeanings.json"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/vocabTrainer/Resources/example"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/testOne/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" path="/testOne/Resources/textfile2.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" path="/vocabTrainer/Resources/logfile.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Todo List/Resources/db.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Todo List/Resources/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" path="/vocabTrainer/tiapp.xml"/>
 </editors>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12335" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="11659" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="11173" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="4204" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="14011" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="4204" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
+<item historyLabel="logfile.txt" index="5">
 <position/>
 </item>
-<item historyLabel="app.js" index="1">
+<item historyLabel="app.js" index="0">
 <position/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3203" y="0"/>
+<item historyLabel="logfile.txt" index="5">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="1727" y="0"/>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1971" y="0"/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3012" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3846" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="11684" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="1474" y="560"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="12353" y="214"/>
-</item>
-<item historyLabel="app.js" index="1">
+<item historyLabel="app.js" index="0">
 <position/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3014" y="0"/>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2257" y="0"/>
 </item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3014" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3014" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3014" y="0"/>
-</item>
-<item historyLabel="tic tac logic" index="0">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3014" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="3995" y="0"/>
-</item>
-<item active="true" historyLabel="app.js" index="1">
+<item historyLabel="app.js" index="0">
 <position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2257" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="682" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="185" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="682" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="db.js" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js | Todo List" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="example" index="2">
+<position info="not_deleted" x="342" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="185" y="0"/>
+</item>
+<item historyLabel="app.js | testOne" index="3">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="185" y="0"/>
+</item>
+<item historyLabel="textfile2.txt" index="4">
+<position info="not_deleted" x="479" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="252" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="303" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="136" y="54"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="992" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="136" y="54"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2046" y="0"/>
+</item>
+<item historyLabel="TiApp Editor" index="8"/>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="1" y="0"/>
+</item>
+<item historyLabel="example" index="2">
+<position info="not_deleted" x="437" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="252" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2257" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2257" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2741" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2741" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2131" y="126"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="426" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="254" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="426" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1023" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1167" y="0"/>
+</item>
+<item historyLabel="wordsAndMeanings.json" index="1">
+<position info="not_deleted" x="65" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1167" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1173" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2615" y="0"/>
+</item>
+<item active="true" historyLabel="app.js" index="0">
+<position info="not_deleted" x="2615" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -439,10 +446,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d83140"/>
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -451,46 +454,51 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.appcelerator.ui.trim"/>
-<trimItem IMemento.internal.id="terminalArea"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="forFriday/Resources/app.js">
-<persistable path="/forFriday/Resources/app.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Todo List/Resources/app.js">
+<persistable path="/Todo List/Resources/app.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tic tac logic" tooltip="forFriday/tic tac logic">
-<persistable path="/forFriday/tic tac logic"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="db.js" tooltip="Todo List/Resources/db.js">
+<persistable path="/Todo List/Resources/db.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="forFriday/tiapp.xml">
-<persistable path="/forFriday/tiapp.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" name="logfile.txt" tooltip="vocabTrainer/Resources/logfile.txt">
+<persistable path="/vocabTrainer/Resources/logfile.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="MessageWindow.js" tooltip="KitchenSink/Resources/ui/common/MessageWindow.js">
-<persistable path="/KitchenSink/Resources/ui/common/MessageWindow.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="example" tooltip="vocabTrainer/Resources/example">
+<persistable path="/vocabTrainer/Resources/example"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="ApplicationWindow.js" tooltip="KitchenSink/Resources/ui/handheld/ios/ApplicationWindow.js">
-<persistable path="/KitchenSink/Resources/ui/handheld/ios/ApplicationWindow.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.json" name="wordsAndMeanings.json" tooltip="vocabTrainer/wordsAndMeanings.json">
+<persistable path="/vocabTrainer/wordsAndMeanings.json"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="KitchenSink/Resources/app.js">
-<persistable path="/KitchenSink/Resources/app.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="todo.sqlite" tooltip="Todo List/Resources/todo.sqlite">
+<persistable path="/Todo List/Resources/todo.sqlite"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="tab_groups.js" tooltip="KitchenSink/Resources/ui/common/baseui/tab_groups.js">
-<persistable path="/KitchenSink/Resources/ui/common/baseui/tab_groups.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" name="wordsAndMeanings.txt" tooltip="vocabTrainer/wordsAndMeanings.txt">
+<persistable path="/vocabTrainer/wordsAndMeanings.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="facebook_publish_stream.js" tooltip="KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js">
-<persistable path="/KitchenSink/Resources/ui/common/mashups/facebook_publish_stream.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" name="textfile2.txt" tooltip="testOne/Resources/textfile2.txt">
+<persistable path="/testOne/Resources/textfile2.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen Sink/tiapp.xml">
-<persistable uri="file:/Users/sandeep/Documents/Titanium_Studio_Workspace/Kitchen%20Sink/tiapp.xml"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="/Users/sandeep/Downloads/localdata 3/Resources/app.js">
+<persistable uri="file:/Users/sandeep/Downloads/localdata%203/Resources/app.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="KS_nav_ui.png" tooltip="imageViewExample/Resources/KS_nav_ui.png">
-<persistable path="/imageViewExample/Resources/KS_nav_ui.png"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="/Users/sandeep/Downloads/localdata 2/Resources/app.js">
+<persistable uri="file:/Users/sandeep/Downloads/localdata%202/Resources/app.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="imageViewExample/tiapp.xml">
-<persistable path="/imageViewExample/tiapp.xml"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="/Users/sandeep/Downloads/localdata/Resources/app.js">
+<persistable uri="file:/Users/sandeep/Downloads/localdata/Resources/app.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="imageViewExample/Resources/app.js">
-<persistable path="/imageViewExample/Resources/app.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="testOne/Resources/app.js">
+<persistable path="/testOne/Resources/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" tooltip="vocabTrainer/tiapp.xml">
+<persistable path="/vocabTrainer/tiapp.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="vocabTrainer/Resources/app.js">
+<persistable path="/vocabTrainer/Resources/app.js"/>
 </file>
 </mruList>
 </workbench>

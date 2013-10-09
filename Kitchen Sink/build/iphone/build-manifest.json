@@ -1,0 +1,23 @@
+{
+	"target": "simulator",
+	"deployType": "development",
+	"deviceFamily": "iphone",
+	"iosSdkPath": "/Users/sandeep/Library/Application Support/Titanium/mobilesdk/osx/3.1.3.GA/iphone",
+	"appGuid": "a0045e2b-c3ae-453a-8864-dabe65fad367",
+	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
+	"modulesHash": "99b8ded9a99f5bdd4d27fd817a99bd41",
+	"nativeModulesHash": "39dffd5c15df4f69b6fe63bc978e3b58",
+	"gitHash": "222f4d1",
+	"name": "KitchenSink",
+	"id": "com.appcelerator.kitchensink",
+	"analytics": true,
+	"publisher": "appcelerator",
+	"url": "http://appcelerator.com",
+	"version": "3.1.3.GA",
+	"description": "not specified",
+	"copyright": "2013 by appcelerator",
+	"guid": "a0045e2b-c3ae-453a-8864-dabe65fad367",
+	"skipJSMinification": true,
+	"forceCopy": false,
+	"forceCopyAll": false
+}

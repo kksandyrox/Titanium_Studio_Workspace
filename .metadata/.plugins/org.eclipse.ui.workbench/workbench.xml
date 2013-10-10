@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="940" width="1377" x="763" y="64">
+<window height="940" width="1377" x="-1" y="171">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -44,7 +44,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/vocabTrainer/Resources/app.js" title="app.js" tooltip="vocabTrainer/Resources/app.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vocabTrainer/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2087" selectionTopPixel="1049"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3628" selectionTopPixel="2205"/>
 </editor>
 <editor id="com.appcelerator.titanium.ui.ide.tiappEditor" name="tiapp.xml" partName="TiApp Editor" path="/Users/sandeep/Documents/Titanium_Studio_Workspace/vocabTrainer/tiapp.xml" title="TiApp Editor" tooltip="vocabTrainer/tiapp.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/vocabTrainer/tiapp.xml"/>
@@ -76,6 +76,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (100 of 1000 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -291,92 +294,15 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/vocabTrainer/Resources/app.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.json" path="/vocabTrainer/Resources/wordsAndMeanings.json"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/vocabTrainer/Resources/example"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/testOne/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" path="/testOne/Resources/textfile2.txt"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" path="/vocabTrainer/Resources/logfile.txt"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Todo List/Resources/db.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Todo List/Resources/app.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.appcelerator.titanium.ui.ide.tiappEditor" path="/vocabTrainer/tiapp.xml"/>
 </editors>
-<item historyLabel="logfile.txt" index="5">
-<position/>
-</item>
-<item historyLabel="app.js" index="0">
-<position/>
-</item>
-<item historyLabel="logfile.txt" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="1971" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="2257" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="2257" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="682" y="0"/>
-</item>
-<item historyLabel="wordsAndMeanings.json" index="1">
-<position info="not_deleted" x="185" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="682" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="303" y="0"/>
-</item>
-<item historyLabel="db.js" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="app.js | Todo List" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="example" index="2">
-<position info="not_deleted" x="342" y="0"/>
-</item>
-<item historyLabel="wordsAndMeanings.json" index="1">
-<position info="not_deleted" x="185" y="0"/>
-</item>
-<item historyLabel="app.js | testOne" index="3">
-<position info="not_deleted" x="423" y="0"/>
-</item>
-<item historyLabel="wordsAndMeanings.json" index="1">
-<position info="not_deleted" x="185" y="0"/>
-</item>
-<item historyLabel="textfile2.txt" index="4">
-<position info="not_deleted" x="479" y="0"/>
-</item>
-<item historyLabel="wordsAndMeanings.json" index="1">
-<position info="not_deleted" x="252" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="303" y="0"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position/>
-</item>
-<item historyLabel="wordsAndMeanings.json" index="1">
-<position info="not_deleted" x="136" y="54"/>
-</item>
-<item historyLabel="app.js" index="0">
-<position info="not_deleted" x="992" y="0"/>
-</item>
 <item historyLabel="wordsAndMeanings.json" index="1">
 <position info="not_deleted" x="136" y="54"/>
 </item>
 <item historyLabel="app.js" index="0">
 <position info="not_deleted" x="2046" y="0"/>
 </item>
-<item historyLabel="TiApp Editor" index="8"/>
+<item historyLabel="TiApp Editor" index="3"/>
 <item historyLabel="wordsAndMeanings.json" index="1">
 <position info="not_deleted" x="1" y="0"/>
 </item>
@@ -437,8 +363,83 @@
 <item historyLabel="app.js" index="0">
 <position info="not_deleted" x="2615" y="0"/>
 </item>
-<item active="true" historyLabel="app.js" index="0">
+<item historyLabel="app.js" index="0">
 <position info="not_deleted" x="2615" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2979" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1088" y="112"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2583" y="208"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2582" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2556" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2239" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2557" y="25"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2192" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2556" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2554" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2401" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2380" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="2352" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="3588" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="3652" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="3647" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="3604" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="3631" y="0"/>
+</item>
+<item active="true" historyLabel="app.js" index="0">
+<position info="not_deleted" x="3623" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

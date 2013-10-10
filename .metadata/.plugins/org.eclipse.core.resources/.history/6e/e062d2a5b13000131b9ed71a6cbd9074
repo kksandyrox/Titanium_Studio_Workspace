@@ -1,0 +1,98 @@
+var window = Ti.UI.createWindow();
+
+var view1 = Titanium.UI.createView({
+	backgroundcolor:'21DCEE'
+});
+var view2 = Titanium.UI.createView({});
+
+var textName = Titanium.UI.createTextField({
+	top:100,
+	left:50,
+	height:50,
+	width:150,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText:'Enter the word'
+});
+
+var textMeaning = Titanium.UI.createTextField({
+	top: 200,
+	left:50,
+	width:150,
+	height:50,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText:'Enter its meaning'
+});
+
+var submit = Titanium.UI.createButton({
+	top:300,
+	left:100,
+	title:'Submit'
+});
+
+var tableView = Ti.UI.createTableView();
+var tableData = [];
+var fileName = 'wordsAndMeanings.json';
+var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, fileName); 
+var preParseData = file.read().text;
+var response = JSON.parse(preParseData);
+
+Ti.API.info(response.words.length);
+
+for(var i = 0; i < response.words.length ; i++){
+	word = response.words[i];
+	row = Ti.UI.createTableViewRow({
+		height : '60dp'
+	});
+	nameLabel = Ti.UI.createLabel({
+		text: word.name,
+		font: { fontSize:'24dp', fontWeight:'bold'},
+		height:'auto',
+		left:'10dp',
+		color:'#000',
+		touchEnabled : false
+	});
+	row.add(nameLabel);
+	tableData.push(row);
+	tableView.setData(tableData);
+}
+
+var add = Titanium.UI.createButton({
+	title: 'Add',
+	top: 150,
+	left: 50
+});
+
+add.addEventListener('click',function(e){
+	window2 = Titanium.UI.createWindow({
+		backgroundColor:'8FD2ED'
+	});
+
+	submit.addEventListener('click', function(e){
+		var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'wordsAndMeanings.json');
+		// response.words.push({"name" : textName.value, "meaning" : textMeaning.value});
+// 		
+		// var json = JSON.stringify(response);
+		if(file.exists() && file.writeable){
+			var success = file.deleteFile();
+			Ti.API.info((success==true) ? 'success' : 'fail');
+			
+		}
+		//file.write(json, true);
+		//Ti.API.info(file.read().text);
+
+		
+	});
+	
+	
+	window2.open();
+	window2.add(view2);
+	view2.add(textName);
+	view2.add(textMeaning);
+	view2.add(submit);
+});
+window.open();
+window.add(view1);
+view1.add(tableView);
+view1.add(add);
+
+

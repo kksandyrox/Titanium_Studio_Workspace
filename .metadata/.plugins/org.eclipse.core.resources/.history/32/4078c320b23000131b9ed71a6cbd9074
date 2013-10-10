@@ -1,0 +1,21 @@
+{
+	"words" : [
+		{	
+			"name" : "Apple",
+			"meaning" : "A fruit"
+		},
+		{
+			"name" : "Truck",
+			"meaning" : "A heavy vehicle"
+		},
+		{
+			"name" : "Zebra",
+			"meaning" : "An animal"
+		},
+		{
+			"name" : "Rock",
+			"meaning" : "A music Genre"
+		}
+	]
+}
+5

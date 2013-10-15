@@ -1,0 +1,56 @@
+var window = Ti.UI.createWindow({
+	backgroundColor: 'white'
+});
+
+
+var table = Titanium.UI.createTableView({});
+var name = [];
+var meaning = [];
+var db = Titanium.Database.install('namedb.db', 'namedb');
+var sql = db.execute('SELECT * FROM nameAndMeaning');
+while(sql.isValidRow()){
+	
+	var i = 0;	
+	var fieldName = sql.fieldByName('name');
+	var fieldMeaning = sql.fieldByName('meaning');
+	name.push({ title: fieldName, hasChild : true});
+	meaning.push({title: fieldMeaning, hasChild: true});
+	sql.next();
+}
+
+
+for(var i =0; i< name.length; i++){
+	row = Ti.UI.createTableViewRow({
+		height:60
+	});
+	var view1 = Ti.UI.createView({
+		rowID:i,
+		height:'90%'
+	});
+	var nameLabel =Ti.UI.createLabel({
+		text:name[i],
+		textAlign:'center'
+	});
+	view1.add(nameLabel);
+	row.add(view1);
+	
+}
+table.setData(name);
+table.addEventListener('swipe', function(e){
+	Ti.API.info(name.length);
+	Ti.API.info(e.direction);
+	Ti.API.info(e.index);
+	Ti.API.info(e.row);
+	var view = Titanium.UI.createView({
+		backgroundColor: 'red'
+	});
+	
+	var label = Ti.UI.createLabel({
+		text:e.index
+	});
+	view.add(label);
+	table.add(view);
+	Ti.API.info(e.index);
+});
+window.add(table);
+window.open();

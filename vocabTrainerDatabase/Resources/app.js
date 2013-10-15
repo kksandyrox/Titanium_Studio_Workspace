@@ -1,0 +1,109 @@
+var window = Ti.UI.createWindow({
+	backgroundColor: 'white'
+});
+var view2 = Ti.UI.createView({
+				backgroundColor:'yellow'
+});
+var textName = Titanium.UI.createTextField({
+	top:100,
+	left:50,
+	height:50,
+	width:150,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText:'Enter the word'
+});
+
+var textMeaning = Titanium.UI.createTextField({
+	top: 200,
+	left:50,
+	width:150,
+	height:50,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText:'Enter its meaning'
+});
+
+var submit = Titanium.UI.createButton({
+	top:300,
+	left:100,
+	title:'Submit'
+});
+
+view2.add(textName);
+view2.add(textMeaning);
+view2.add(submit);
+
+
+var table = Titanium.UI.createTableView({});
+var name = [];
+var name2 = [];
+var meaning = [];
+var db = Titanium.Database.install('namedb.db', 'namedb');
+var sql = db.execute('SELECT * FROM nameAndMeaning');
+while(sql.isValidRow()){
+	
+	var i = 0;	
+	var fieldName = sql.fieldByName('name');
+	var fieldMeaning = sql.fieldByName('meaning');
+	name.push(fieldName);
+	meaning.push(fieldMeaning);
+	sql.next();
+}
+
+
+for(var i =0; i< name.length; i++){
+	row = Ti.UI.createTableViewRow({
+		height:60,
+		hasChild:true
+	});
+	var view1 = Ti.UI.createView({
+		rowID:i,
+		height:'90%',
+		backgroundColor:'white'
+	});
+	var nameLabel =Ti.UI.createLabel({
+		text:name[i],
+		textAlign:'center',
+		color:'green',
+		font:{ fontSize: 20, fontWeight: 'bold'}
+	});
+	view1.add(nameLabel);
+	row.add(view1);
+	name2.push(row);
+	
+}
+table.setData(name2);
+var meaningView = Titanium.UI.createView({backgroundColor:'white',});
+var meaningLabel = Ti.UI.createLabel({hasChild: true});
+var backButton = Ti.UI.createButton({title:'Back'});
+var add = Titanium.UI.createButton({title: 'Add',top: 1,height:30,width: '98%'});
+add.addEventListener('click', function(e){
+	window.add(view2);	
+	add.hide();
+	//view2.show();
+});
+	
+
+
+table.addEventListener('swipe', function(e){
+	meaningLabel.text=  meaning[e.source.rowID];
+	window.add(meaningView);
+	meaningView.show();
+	meaningView.add(meaningLabel);
+	meaningView.add(backButton);
+	backButton.addEventListener('click', function(e){
+		meaningView.hide();
+		table.show();
+	});
+	//alert(meaning[e.source.rowID]);
+});
+
+submit.addEventListener('click', function(e){
+	db.execute('INSERT INTO nameAndMeaning (name, meaning) VALUES(?,?)', textName.value, textMeaning.value);
+	//name2.push(textName.value);
+//	meaning.push(textMeaning.value);
+	Ti.API.info(meaning);
+});
+window.add(table);
+window.add(add);
+
+window.open();

@@ -1,0 +1,40 @@
+var window = Ti.UI.createWindow({
+	backgroundColor: 'white'
+});
+
+
+var table = Titanium.UI.createTableView({});
+var name = [];
+var meaning = [];
+var db = Titanium.Database.install('namedb.db', 'namedb');
+var sql = db.execute('SELECT * FROM nameAndMeaning');
+while(sql.isValidRow()){
+	
+	var i = 0;	
+	var fieldName = sql.fieldByName('name');
+	var fieldMeaning = sql.fieldByName('meaning');
+	name.push({ title: fieldName, hasChild : true});
+	meaning.push({title: fieldMeaning, hasChild: true});
+	sql.next();
+}
+
+
+table.setData(name);
+table.addEventListener('click', function(e){
+	Ti.API.info(name.length);
+	Ti.API.info(e.direction);
+	Ti.API.info(e.index);
+	Ti.API.info(e.row);
+	var view = Titanium.UI.createView({
+		backgroundColor: 'red'
+	});
+	
+	var label = Ti.UI.createLabel({
+		text:e.index
+	});
+	view.add(label);
+	table.add(view);
+	Ti.API.info(e.index);
+});
+window.add(table);
+window.open();

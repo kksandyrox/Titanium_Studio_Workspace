@@ -1,0 +1,59 @@
+var window = Ti.UI.createWindow({
+	backgroundColor: 'white'
+});
+
+
+var table = Titanium.UI.createTableView({});
+var name = [];
+var name2 = [];
+var meaning = [];
+var db = Titanium.Database.install('namedb.db', 'namedb');
+var sql = db.execute('SELECT * FROM nameAndMeaning');
+while(sql.isValidRow()){
+	
+	var i = 0;	
+	var fieldName = sql.fieldByName('name');
+	var fieldMeaning = sql.fieldByName('meaning');
+	name.push(fieldName);
+	meaning.push(fieldMeaning);
+	sql.next();
+}
+
+
+for(var i =0; i< name.length; i++){
+	row = Ti.UI.createTableViewRow({
+		height:60,
+		hasChild:true
+	});
+	var view1 = Ti.UI.createView({
+		rowID:i,
+		height:'90%',
+		backgroundColor:'white'
+	});
+	var nameLabel =Ti.UI.createLabel({
+		text:name[i],
+		textAlign:'center',
+		color:'green',
+		font:{ fontSize: 20, fontWeight: 'bold'}
+	});
+	view1.add(nameLabel);
+	row.add(view1);
+	name2.push(row);
+	
+}
+table.setData(name2);
+table.addEventListener('swipe', function(e){
+	var meaningView = Ti.UI.createView({
+	width : Ti.UI.FILL,
+	height : Ti.UI.FILL	
+	});
+	var meaningLabel = Titanium.UI.createLabel({
+		text:meaning[e.source.rowID]
+	});
+	window.add(meaningView);
+	meaningView.show();
+	meaningView.add(meaningLabel);
+	Ti.API.info(meaning[e.source.rowID]);
+});
+window.add(table);
+window.open();

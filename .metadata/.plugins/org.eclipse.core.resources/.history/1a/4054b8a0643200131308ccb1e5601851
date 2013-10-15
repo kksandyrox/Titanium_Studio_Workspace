@@ -1,0 +1,46 @@
+function _printList(){
+for(var i = 0; i < response.words.length ; i++){
+	word = response.words[i];
+	row = Ti.UI.createTableViewRow({
+		
+		height : '60',
+		className: 'row',
+		touchEnabled:true,
+		backgroundColor:'red',
+		objName: 'row'
+	});
+	
+	var view1 = Titanium.UI.createView({
+		backgroundColor:'F7E70E',
+		objName:'view1',
+		rowID: i,
+		height:'90%',
+		borderRadius:10,
+		borderColor:'#A86507'
+	});
+	
+	
+	var nameLabel = Ti.UI.createLabel({
+		text: word.name,
+		font: { fontSize:'24dp', fontWeight:'bold'},
+		height:'auto',
+		textAlign:'center',
+		//left:'10dp',
+		color:'black',
+		//shadowcolor: 'red',
+		objName: 'nameLabel',
+		touchEnabled: false,
+		//shadowOffset:{x:1.8,y:-1.8}
+  
+	});
+	
+	view1.add(nameLabel);
+	row.add(view1);
+	//row.add(nameLabel);
+	tableData.push(row);
+	
+	//nameLabel.add(leftSwipe);	
+}
+}
+
+module.exports = _printList;

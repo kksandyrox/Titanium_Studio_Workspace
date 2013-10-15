@@ -13,8 +13,10 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="mode" key="selection"/>
+		<item value="timodule" key="selection"/>
 		<list key="findhistory">
+			<item value="timodule"/>
+			<item value="_write"/>
 			<item value="mode"/>
 			<item value="enter fb status"/>
 			<item value="prevTab"/>

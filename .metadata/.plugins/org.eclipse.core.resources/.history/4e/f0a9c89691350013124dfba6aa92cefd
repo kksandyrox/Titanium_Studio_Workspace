@@ -86,7 +86,7 @@ for(var i =0; i< name.length; i++){
 table.setData(name2);
 var meaningView = Titanium.UI.createView({backgroundColor:'white',});
 var meaningLabel = Ti.UI.createLabel({hasChild: true});
-var backButton = Ti.UI.createButton({title:'Back', top:5});
+var backButton = Ti.UI.createButton({title:'Back'});
 var add = Titanium.UI.createButton({title: 'Add',top: 1,height:30,width: '98%'});
 add.addEventListener('click', function(e){
 	window2.open();
@@ -118,9 +118,9 @@ submit.addEventListener('click', function(e){
 	name1.push(fieldName1);
 	meaning1.push(fieldMeaning1);
 	sql.next();
-	Ti.API.info(fieldMeaning1);
 }
 
+var newtableData = [];
 for(var i =0; i< name.length; i++){
 	row = Ti.UI.createTableViewRow({
 		height:60,
@@ -132,7 +132,7 @@ for(var i =0; i< name.length; i++){
 		backgroundColor:'white'
 	});
 	var nameLabel =Ti.UI.createLabel({
-		text:name1[i],
+		text:name[i],
 		textAlign:'center',
 		color:'green',
 		font:{ fontSize: 20, fontWeight: 'bold'}
@@ -144,11 +144,11 @@ name3.push(row);
 }
 var rd = [];
 table.setData(rd);
-table.setData(name3);
-window2.close();
-window.open();
+table.setData(newtableData);
+ window2.close();
+ window.open();
 	
-//	name2.push(textName.value);
+	//name2.push(textName.value);
 //	meaning.push(textMeaning.value);
 	Ti.API.info(meaning);
 });

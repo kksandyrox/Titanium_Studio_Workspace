@@ -148,7 +148,7 @@ table.setData(name3);
 window2.close();
 window.open();
 	
-//	name2.push(textName.value);
+	//name2.push(textName.value);
 //	meaning.push(textMeaning.value);
 	Ti.API.info(meaning);
 });

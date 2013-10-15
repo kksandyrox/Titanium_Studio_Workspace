@@ -86,7 +86,7 @@ for(var i =0; i< name.length; i++){
 table.setData(name2);
 var meaningView = Titanium.UI.createView({backgroundColor:'white',});
 var meaningLabel = Ti.UI.createLabel({hasChild: true});
-var backButton = Ti.UI.createButton({title:'Back', top:5});
+var backButton = Ti.UI.createButton({title:'Back'});
 var add = Titanium.UI.createButton({title: 'Add',top: 1,height:30,width: '98%'});
 add.addEventListener('click', function(e){
 	window2.open();
@@ -148,7 +148,7 @@ table.setData(name3);
 window2.close();
 window.open();
 	
-//	name2.push(textName.value);
+	//name2.push(textName.value);
 //	meaning.push(textMeaning.value);
 	Ti.API.info(meaning);
 });

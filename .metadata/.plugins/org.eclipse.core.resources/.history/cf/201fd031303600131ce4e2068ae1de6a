@@ -1,0 +1,45 @@
+Map = {};
+ 
+//here we will store our map
+Map.view = null;
+ 
+//function to create a map
+Map.createView = function() {
+    // create map view
+    Map.view = Titanium.Map.createView({
+        mapType: Titanium.Map.STANDARD_TYPE,
+        animate:true,
+        regionFit:true,
+        userLocation:false,
+        top:0,
+        left:0,
+        //to set map center and zoom level
+        region:{latitude:56.9475, longitude:24.104, latitudeDelta:1, longitudeDelta:3}
+    });
+};
+ 
+//create new pin
+Map.addPin = function(latitude, longitude,title, subtitle) {
+    var pin = Titanium.Map.createAnnotation({
+        latitude:latitude,
+        longitude:longitude,
+        title:title,
+        subtitle:subtitle,
+        animate:true,
+        pincolor:Titanium.Map.ANNOTATION_RED,
+    });
+    Map.view.addAnnotation(pin);
+};
+ 
+ 
+//Creating map and adding pins
+Map.createView();
+Map.addPin(56.94759577, 24.104003, "Home", "My current position");
+ 
+//Displaying map in the window
+var win = Ti.UI.createWindow({
+    backgroundColor:'#000'
+});
+win.add(Map.view);
+win.open();
+- See more at: http://appcodingeasy.com/Titanium-Mobile/Google-Maps-in-Titanium#sthash.p4jLtSQa.dpuf
